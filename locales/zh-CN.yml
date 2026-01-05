@@ -1,5 +1,5 @@
 button:
-  about: 关于
+  about: 关于我
   back: 返回
   go: 确定
   home: 首页
@@ -7,8 +7,4 @@ button:
   toggle_langs: 切换语言
 intro:
   desc: 欢迎来到我的个人空间
-  dynamic-route: 动态路由演示
-  hi: 你好，{name}
-  aka: 也叫
-  whats-your-name: 输入你的名字
 not-found: 未找到页面
