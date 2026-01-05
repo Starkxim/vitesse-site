@@ -38,13 +38,6 @@ body {
   box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
 }
 
-/* Smooth transitions for all interactive elements */
-* {
-  transition-property: color, background-color, border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
