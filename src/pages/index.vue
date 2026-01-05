@@ -12,8 +12,8 @@ defineOptions({
         <img
           src="https://1.gravatar.com/avatar/becc85ade9cae6e94988c6cf987209018d3f85a56ba6a2a95e1aec742293f368?size=512&d=initials"
           alt="Avatar"
-          class="animate-float w-24 h-24 rounded-full"
-        />
+          class="animate-float h-24 w-24 rounded-full"
+        >
       </div>
 
       <h1 class="gradient-text mb-4 animate-fade-in text-5xl font-bold">
