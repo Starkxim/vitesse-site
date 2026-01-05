@@ -9,9 +9,10 @@ defineOptions({
     <!-- Hero Section -->
     <div class="hero-section mb-12">
       <div class="avatar-container mb-8">
-        <div
-          i-carbon-user-avatar
-          class="animate-float text-6xl text-teal-600 dark:text-teal-400"
+        <img
+          src="https://1.gravatar.com/avatar/becc85ade9cae6e94988c6cf987209018d3f85a56ba6a2a95e1aec742293f368?size=512&d=initials"
+          alt="Avatar"
+          class="animate-float w-24 h-24 rounded-full"
         />
       </div>
 
@@ -57,7 +58,7 @@ defineOptions({
           title="Memos - 碎片化记录"
           class="social-link memos-link"
         >
-          <div i-carbon-document-notes />
+          <div i-carbon-notebook />
           <span class="link-label">Memos</span>
         </a>
 
