@@ -2,51 +2,54 @@
 defineOptions({
   name: 'IndexPage',
 })
-const user = useUserStore()
-const name = ref(user.savedName)
-
-const router = useRouter()
-function go() {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
-}
-
-const { t } = useI18n()
 </script>
 
 <template>
   <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
+    <div text-4xl mb-6>
+      <div i-carbon-user-avatar inline-block />
     </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/Starkxim" target="_blank">
-        Starkxim
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
+    <h1 text-3xl font-bold mb-2>
+      欢迎来到我的个人网站
+    </h1>
+    <p text-lg mb-6>
+      <em text-sm opacity-75>分享我的思想、代码和想法</em>
     </p>
 
     <div py-4 />
 
-    <TheInput
-      v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      autocomplete="false"
-      @keydown.enter="go"
-    />
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
-    <div>
-      <button
-        m-3 text-sm btn
-        :disabled="!name"
-        @click="go"
+    <!-- 社交链接 -->
+    <nav flex="~ gap-6" justify-center text-2xl>
+      <a
+        icon-btn
+        rel="noreferrer"
+        href="https://blog.czx.kim"
+        title="博客"
+        class="hover:text-blue-500 transition-colors"
       >
-        {{ t('button.go') }}
-      </button>
-    </div>
+        <div i-carbon-blog />
+      </a>
+      <a
+        icon-btn
+        rel="noreferrer"
+        href="https://memos.czx.kim"
+        target="_blank"
+        title="Memos"
+        class="hover:text-green-500 transition-colors"
+      >
+        <div i-carbon-document-notes />
+      </a>
+      <a
+        icon-btn
+        rel="noreferrer"
+        href="https://github.com/Starkxim"
+        target="_blank"
+        title="GitHub"
+        class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+      >
+        <div i-carbon-logo-github />
+      </a>
+    </nav>
   </div>
 </template>
 
