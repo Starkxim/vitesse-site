@@ -30,14 +30,6 @@ async function toggleLocales() {
       <div i-carbon-dicom-overlay />
     </RouterLink>
 
-    <a icon-btn rel="noreferrer" href="https://github.com/Starkxim" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
-    </a>
-
-    <a icon-btn rel="noreferrer" href="https://blog.czx.kim" target="_blank" title="Blog">
-      <div i-carbon-blog />
-    </a>
-
     <a icon-btn rel="noreferrer" href="https://memos.czx.kim" target="_blank" title="Memos">
       <div i-carbon-document-notes />
     </a>
