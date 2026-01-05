@@ -9,21 +9,21 @@ defineOptions({
     <!-- Hero Section -->
     <div class="hero-section mb-12">
       <div class="avatar-container mb-8">
-        <div 
-          i-carbon-user-avatar 
-          class="text-6xl text-teal-600 dark:text-teal-400 animate-float"
+        <div
+          i-carbon-user-avatar
+          class="animate-float text-6xl text-teal-600 dark:text-teal-400"
         />
       </div>
-      
-      <h1 class="text-5xl font-bold mb-4 gradient-text animate-fade-in">
+
+      <h1 class="gradient-text mb-4 animate-fade-in text-5xl font-bold">
         欢迎来到我的个人网站
       </h1>
-      
-      <p class="text-xl mb-3 text-gray-600 dark:text-gray-400 animate-fade-in-delay">
+
+      <p class="animate-fade-in-delay mb-3 text-xl text-gray-600 dark:text-gray-400">
         分享我的思想、代码和想法
       </p>
-      
-      <p class="text-sm opacity-60 mb-8 animate-fade-in-delay-2">
+
+      <p class="animate-fade-in-delay-2 mb-8 text-sm opacity-60">
         探索技术 • 记录生活 • 分享心得
       </p>
     </div>
@@ -32,11 +32,11 @@ defineOptions({
 
     <!-- Social Links Section -->
     <div class="social-section">
-      <h2 class="text-lg font-semibold mb-6 opacity-75">
+      <h2 class="mb-6 text-lg font-semibold opacity-75">
         🔗 我的社交空间
       </h2>
-      
-      <nav class="flex gap-8 justify-center text-3xl">
+
+      <nav class="flex justify-center gap-8 text-3xl">
         <a
           icon-btn
           rel="noreferrer"
@@ -48,7 +48,7 @@ defineOptions({
           <div i-carbon-blog />
           <span class="link-label">博客</span>
         </a>
-        
+
         <a
           icon-btn
           rel="noreferrer"
@@ -60,7 +60,7 @@ defineOptions({
           <div i-carbon-document-notes />
           <span class="link-label">Memos</span>
         </a>
-        
+
         <a
           icon-btn
           rel="noreferrer"
@@ -95,7 +95,8 @@ defineOptions({
 
 /* Animations */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -205,11 +206,11 @@ defineOptions({
   .hero-section h1 {
     font-size: 2rem;
   }
-  
+
   .social-section nav {
     gap: 1rem;
   }
-  
+
   .social-link {
     padding: 1rem;
   }
