@@ -8,9 +8,18 @@ body,
   padding: 0;
 }
 
+html {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  transition: background 0.3s ease;
+}
+
 html.dark {
-  background: #121212;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color-scheme: dark;
+}
+
+body {
+  background: transparent;
 }
 
 #nprogress {
@@ -18,12 +27,44 @@ html.dark {
 }
 
 #nprogress .bar {
-  background: rgb(13, 148, 136);
-  opacity: 0.75;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  opacity: 0.85;
   position: fixed;
   z-index: 1031;
   top: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.5);
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: rgba(168, 237, 234, 0.3);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 237, 234, 0.5);
 }

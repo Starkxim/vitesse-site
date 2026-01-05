@@ -5,8 +5,8 @@
   >
     <RouterView />
     <TheFooter />
-    <div mx-auto mt-5 text-center text-sm opacity-50>
-      powered by <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank"> Vitesse </a>
+    <div mx-auto mt-8 text-center text-sm opacity-40>
+      <p>Made with ❤️ by Zixu Cao</p>
     </div>
   </main>
 </template>
